@@ -60,9 +60,8 @@ public abstract class roomDB extends RoomDatabase {
     public abstract statusDAO statusDAO();
     public abstract tableTypeDAO tableTypeDAO();
     public abstract POSdtoptionDAO POSdtoptionDAO();
-
     public abstract tillDAO tillDAO();
-
     public abstract orderTypeDAO orderTypeDAO();
+    public abstract comboItemsDAO comboItemsDAO();
 }
 

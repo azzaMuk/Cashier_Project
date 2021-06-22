@@ -8,8 +8,8 @@ import androidx.room.PrimaryKey;
         @ForeignKey(entity = category.class,parentColumns = "categoryID",childColumns = "categoryID")})
 
 public class menu {
-    @PrimaryKey(autoGenerate = true)
-    private int itemID;
+    @PrimaryKey
+    private String itemID;
     private String itemName;
     private String itemBarcode;
     private float itemPrice;
@@ -21,7 +21,7 @@ public class menu {
     private float discountAmount;
     private byte[] itemImage;
 
-    public menu(int itemID, String itemName, String itemBarcode, float itemPrice, String itemDescription, int itemQuantity, int branchID, int categoryID, boolean discount, float discountAmount, byte[] itemImage) {
+    public menu(String itemID, String itemName, String itemBarcode, float itemPrice, String itemDescription, int itemQuantity, int branchID, int categoryID, boolean discount, float discountAmount, byte[] itemImage) {
         this.itemID = itemID;
         this.itemName = itemName;
         this.itemBarcode = itemBarcode;
@@ -35,7 +35,7 @@ public class menu {
         this.itemImage = itemImage;
     }
 
-    public int getItemID() {
+    public String getItemID() {
         return itemID;
     }
 
@@ -71,7 +71,7 @@ public class menu {
         return itemImage;
     }
 
-    public void setItemID(int itemID) {
+    public void setItemID(String itemID) {
         this.itemID = itemID;
     }
 
