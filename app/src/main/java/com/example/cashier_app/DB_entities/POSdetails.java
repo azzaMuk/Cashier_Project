@@ -4,13 +4,11 @@ import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 
-@Entity(foreignKeys = {@ForeignKey(entity = POSdtoption.class,parentColumns = "serialNumOption",childColumns = "serialNumOption"),@ForeignKey(entity = offers.class,parentColumns = "promoID",childColumns = "offerID")})
+@Entity(primaryKeys = {"serialNumber","itemID","bill_ID"},
+        foreignKeys = {@ForeignKey(entity = POSdtoption.class,parentColumns = "serialNumOption",childColumns = "serialNumOption"),@ForeignKey(entity = offers.class,parentColumns = "promoID",childColumns = "offerID")})
 public class POSdetails {
-    @PrimaryKey(autoGenerate = true)
     private int serialNumber;
-    @PrimaryKey
     private int itemID;
-    @PrimaryKey
     private int bill_ID;
     private String itemBarcode;
     private float fullPrice;

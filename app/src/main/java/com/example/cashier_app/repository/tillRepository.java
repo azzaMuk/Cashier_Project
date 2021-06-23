@@ -6,10 +6,8 @@ import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.cashier_app.DB_entities.status;
 import com.example.cashier_app.DB_entities.till;
 import com.example.cashier_app.dao.roomDB;
-import com.example.cashier_app.dao.statusDAO;
 import com.example.cashier_app.dao.tillDAO;
 
 import java.util.List;

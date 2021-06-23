@@ -12,17 +12,15 @@ public class centerOfSale {
     private String centerOfSaleName;
     private int branchID;
     private boolean centerOfSaleStatus;
-    private Time startTime;
-    private Time endTime;
+  //  private Time startTime;
+    //private Time endTime;
 
 
-    public centerOfSale(int centerOfSaleID, String centerOfSaleName, int branchID, boolean centerOfSaleStatus, Time startTime, Time endTime) {
+    public centerOfSale(int centerOfSaleID, String centerOfSaleName, int branchID, boolean centerOfSaleStatus) {
         this.centerOfSaleID = centerOfSaleID;
         this.centerOfSaleName = centerOfSaleName;
         this.branchID = branchID;
         this.centerOfSaleStatus = centerOfSaleStatus;
-        this.startTime = startTime;
-        this.endTime = endTime;
     }
 
     public int getBranchID() {
@@ -41,13 +39,6 @@ public class centerOfSale {
         return centerOfSaleStatus;
     }
 
-    public Time getStartTime() {
-        return startTime;
-    }
-
-    public Time getEndTime() {
-        return endTime;
-    }
 
     public void setCenterOfSaleID(int centerOfSaleID) {
         this.centerOfSaleID = centerOfSaleID;
@@ -61,13 +52,6 @@ public class centerOfSale {
         this.centerOfSaleStatus = centerOfSaleStatus;
     }
 
-    public void setStartTime(Time startTime) {
-        this.startTime = startTime;
-    }
-
-    public void setEndTime(Time endTime) {
-        this.endTime = endTime;
-    }
 
     public void setBranchID(int branchID) {
         this.branchID = branchID;

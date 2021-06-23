@@ -2,21 +2,17 @@ package com.example.cashier_app.DB_entities;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
-import androidx.room.PrimaryKey;
 
-import java.sql.Date;
-import java.sql.Time;
+import com.example.cashier_app.repository.COSRepository;
 
-@Entity(foreignKeys = {@ForeignKey(entity = centerOfSale.class,parentColumns = "centerOfSaleID",childColumns = "centerOfSaleID"),
+@Entity(primaryKeys = {"bill_ID","POSID","branchID"},
+        foreignKeys = {@ForeignKey(entity = centerOfSale.class,parentColumns = "centerOfSaleID",childColumns = "centerOfSaleID"),
         @ForeignKey(entity = paymentMethodsDB.class,parentColumns = "serialPay",childColumns = "serialPay"),
         @ForeignKey(entity = status.class,parentColumns = "statusID",childColumns = "orderStatus"),
         @ForeignKey(entity = orderType.class,parentColumns = "orderTypeID",childColumns = "orderTypeID")})
 public class POSHeader {
-    @PrimaryKey
     private int bill_ID;
-    @PrimaryKey
     private int POSID;
-    @PrimaryKey
     private int branchID;
     private int centerOfSaleID;
     private float discountAmount;
@@ -26,8 +22,8 @@ public class POSHeader {
     private int orderStatus;
     private int serialPay;
     private float vat;
-    private Date date;
-    private Time time;
+    //private Date date;
+    //private Time time;
     private float amountOfReturn;
     private int entities;
     private int ref;
@@ -35,7 +31,7 @@ public class POSHeader {
     private int salesPersonID;
 
 
-    public POSHeader(int bill_ID, int POSID, int branchID, int centerOfSaleID, float discountAmount, float discountPercentage, float totalPrice, int orderTypeID, int orderStatus, int serialPay, float vat, Date date, Time time, float amountOfReturn, int entities, int ref, boolean inforreturn, int salesPersonID) {
+    public POSHeader(int bill_ID, int POSID, int branchID, int centerOfSaleID, float discountAmount, float discountPercentage, float totalPrice, int orderTypeID, int orderStatus, int serialPay, float vat, float amountOfReturn, int entities, int ref, boolean inforreturn, int salesPersonID) {
         this.bill_ID = bill_ID;
         this.POSID = POSID;
         this.branchID = branchID;
@@ -47,8 +43,6 @@ public class POSHeader {
         this.orderStatus = orderStatus;
         this.serialPay = serialPay;
         this.vat = vat;
-        this.date = date;
-        this.time = time;
         this.amountOfReturn = amountOfReturn;
         this.entities = entities;
         this.ref = ref;
@@ -89,13 +83,6 @@ public class POSHeader {
         return vat;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public Time getTime() {
-        return time;
-    }
 
     public int getCenterOfSaleID() {
         return centerOfSaleID;
@@ -149,13 +136,7 @@ public class POSHeader {
         this.vat = vat;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
-    public void setTime(Time time) {
-        this.time = time;
-    }
 
     public void setAmountOfReturn(float amountOfReturn) {
         this.amountOfReturn = amountOfReturn;

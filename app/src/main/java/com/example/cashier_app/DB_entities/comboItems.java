@@ -1,11 +1,12 @@
 package com.example.cashier_app.DB_entities;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
 public class comboItems {
-    @PrimaryKey
+    @PrimaryKey @NonNull
     private String comboItemID;
     private String comboItemName;
     private String itemsId;

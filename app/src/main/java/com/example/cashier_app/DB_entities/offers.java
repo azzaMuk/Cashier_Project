@@ -13,17 +13,16 @@ public class offers {
     private float amountWithPer;
     private float amountWithSAR;
     private int minQuantity;
-    private Date startDate;
-    private Date endDate;
+    //private Date startDate;
+    //private Date endDate;
 
-    public offers(int promoID, String promoCode, float amountWithPer, float amountWithSAR, int minQuantity, Date startDate, Date endDate) {
+
+    public offers(int promoID, String promoCode, float amountWithPer, float amountWithSAR, int minQuantity) {
         this.promoID = promoID;
         this.promoCode = promoCode;
         this.amountWithPer = amountWithPer;
         this.amountWithSAR = amountWithSAR;
         this.minQuantity = minQuantity;
-        this.startDate = startDate;
-        this.endDate = endDate;
     }
 
     public int getPromoID() {
@@ -66,19 +65,5 @@ public class offers {
         this.minQuantity = minQuantity;
     }
 
-    public Date getStartDate() {
-        return startDate;
-    }
 
-    public Date getEndDate() {
-        return endDate;
-    }
-
-    public void setStartDate(Date startDate) {
-        this.startDate = startDate;
-    }
-
-    public void setEndDate(Date endDate) {
-        this.endDate = endDate;
-    }
 }

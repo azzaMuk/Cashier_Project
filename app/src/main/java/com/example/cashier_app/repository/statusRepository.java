@@ -5,9 +5,7 @@ import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
-import com.example.cashier_app.DB_entities.branch;
 import com.example.cashier_app.DB_entities.status;
-import com.example.cashier_app.dao.branchDAO;
 import com.example.cashier_app.dao.roomDB;
 import com.example.cashier_app.dao.statusDAO;
 
@@ -49,7 +47,7 @@ public class statusRepository {
         new statusRepository.DeleteAllAsyncTask(status_DAO).execute();
     }
 
-    private static class InsertAsyncTask extends AsyncTask<status ,Void,Void>{
+    private static class InsertAsyncTask extends AsyncTask<status,Void,Void>{
         private statusDAO status_DAO;
         public InsertAsyncTask(statusDAO s){
             status_DAO=s;
@@ -60,7 +58,7 @@ public class statusRepository {
             return null;
         }
     }
-    private static class DeleteAsyncTask extends AsyncTask<status ,Void,Void>{
+    private static class DeleteAsyncTask extends AsyncTask<status,Void,Void>{
         private statusDAO status_DAO;
         public DeleteAsyncTask(statusDAO s){
             status_DAO=s;
@@ -71,7 +69,7 @@ public class statusRepository {
             return null;
         }
     }
-    private static class UpdateAsyncTask extends AsyncTask<status ,Void,Void>{
+    private static class UpdateAsyncTask extends AsyncTask<status,Void,Void>{
         private statusDAO status_DAO;
         public UpdateAsyncTask(statusDAO s){
             status_DAO=s;

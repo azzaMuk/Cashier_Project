@@ -13,6 +13,8 @@ import com.example.cashier_app.DB_entities.POSdtoption;
 import com.example.cashier_app.DB_entities.branch;
 import com.example.cashier_app.DB_entities.category;
 import com.example.cashier_app.DB_entities.centerOfSale;
+import com.example.cashier_app.DB_entities.comboItems;
+import com.example.cashier_app.DB_entities.orderType;
 import com.example.cashier_app.DB_entities.salesPerson;
 import com.example.cashier_app.DB_entities.itemOptions;
 import com.example.cashier_app.DB_entities.menu;
@@ -23,10 +25,13 @@ import com.example.cashier_app.DB_entities.paymentMethodsDB;
 import com.example.cashier_app.DB_entities.restaurantTables;
 import com.example.cashier_app.DB_entities.role;
 import com.example.cashier_app.DB_entities.status;
+import com.example.cashier_app.DB_entities.tableType;
+import com.example.cashier_app.DB_entities.till;
+import com.example.cashier_app.repository.COSRepository;
 
 @Database(entities = {branch.class, category.class, centerOfSale.class, salesPerson.class, itemOptions.class, menu.class,
         mix_menu_options.class, offers.class, paymentDB.class, paymentMethodsDB.class, POS.class, POSdetails.class,
-        POSdtoption.class, POSHeader.class, restaurantTables.class, role.class, status.class},version = 1)
+        POSdtoption.class, POSHeader.class, restaurantTables.class, role.class, status.class, orderType.class, till.class, tableType.class, comboItems.class},version = 1)
 public abstract class roomDB extends RoomDatabase {
 
     private static roomDB instance;
@@ -35,8 +40,8 @@ public abstract class roomDB extends RoomDatabase {
     //Singleton
     public static synchronized roomDB getInstance(Context context){
         if(instance==null){
-            instance= Room.databaseBuilder(context.getApplicationContext(),roomDB.class,"cashierDB")
-                    .fallbackToDestructiveMigration()
+            instance= Room.databaseBuilder(context.getApplicationContext(),roomDB.class,"cashierDB.db")
+                    .createFromAsset("database/myapp.db")
                     .build();
         }
         return instance;

@@ -1,5 +1,6 @@
 package com.example.cashier_app.DB_entities;
 
+import androidx.annotation.NonNull;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
@@ -8,7 +9,7 @@ import androidx.room.PrimaryKey;
         @ForeignKey(entity = category.class,parentColumns = "categoryID",childColumns = "categoryID")})
 
 public class menu {
-    @PrimaryKey
+    @PrimaryKey @NonNull
     private String itemID;
     private String itemName;
     private String itemBarcode;

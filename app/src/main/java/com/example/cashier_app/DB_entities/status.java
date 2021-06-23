@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class status {
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     private int statusID;
     private String statusName;
 

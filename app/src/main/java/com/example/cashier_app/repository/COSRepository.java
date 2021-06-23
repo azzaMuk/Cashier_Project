@@ -4,6 +4,8 @@ import android.app.Application;
 import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import com.example.cashier_app.DB_entities.centerOfSale;
 import com.example.cashier_app.dao.centerOfSaleDAO;
@@ -91,5 +93,6 @@ public class COSRepository {
             return null;
         }
     }
+
 
 }
