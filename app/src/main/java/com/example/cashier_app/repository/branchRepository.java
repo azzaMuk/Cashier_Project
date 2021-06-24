@@ -39,7 +39,7 @@ public class branchRepository {
 
     //GetAll
 
-    public LiveData<List<branch>> getAllBranch(branch b){
+    public LiveData<List<branch>> getAllBranch(){
        return getAllBranches;
     }
 

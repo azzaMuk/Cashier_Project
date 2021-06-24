@@ -40,7 +40,7 @@ public class mixRepository {
 
     //GetAll
 
-    public LiveData<List<mix_menu_options>> getAllMIX(mix_menu_options mix){
+    public LiveData<List<mix_menu_options>> getAllMIX(){
         return getAllMIX;
     }
 

@@ -38,7 +38,7 @@ public class dtOptionRepository {
 
     //GetAll
 
-    public LiveData<List<POSdtoption>> getAllDtOptions(POSdtoption dtOption) {
+    public LiveData<List<POSdtoption>> getAllDtOptions() {
         return getAllDtOptions;
     }
 

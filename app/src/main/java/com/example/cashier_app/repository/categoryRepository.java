@@ -41,7 +41,7 @@ public class categoryRepository {
 
     //GetAll
 
-    public LiveData<List<category>> getAllCategories (category c){
+    public LiveData<List<category>> getAllCategories (){
         return getAllCategory;
     }
 

@@ -40,7 +40,7 @@ public class roleRepository {
 
     //GetAll
 
-    public LiveData<List<role>> getAllRole(role r) {
+    public LiveData<List<role>> getAllRole() {
         return getAllRoles;
     }
 

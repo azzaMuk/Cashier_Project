@@ -39,7 +39,7 @@ public class menuRepository {
 
     //GetAll
 
-    public LiveData<List<menu>> getAllItems(menu m) {
+    public LiveData<List<menu>> getAllItems() {
         return getAllItems;
     }
 

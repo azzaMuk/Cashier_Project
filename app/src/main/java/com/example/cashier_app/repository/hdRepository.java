@@ -42,7 +42,7 @@ public class hdRepository {
 
     //GetAll
 
-    public LiveData<List<POSHeader>> getAllHeader(POSHeader h) {
+    public LiveData<List<POSHeader>> getAllHeader() {
         return getAllHeaders;
     }
 

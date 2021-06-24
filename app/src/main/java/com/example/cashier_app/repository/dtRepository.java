@@ -37,7 +37,7 @@ public class dtRepository {
 
     //GetAll
 
-    public LiveData<List<POSdetails>> getAllDetail(POSdetails dt){
+    public LiveData<List<POSdetails>> getAllDetail(){
         return getAllDetails;
     }
 

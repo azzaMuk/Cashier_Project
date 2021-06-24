@@ -39,7 +39,7 @@ public class orderTypeRepository {
 
     //GetAll
 
-    public LiveData<List<orderType>> getAllTypes(orderType ot){
+    public LiveData<List<orderType>> getAllTypes(){
         return getAllTypes;
     }
 

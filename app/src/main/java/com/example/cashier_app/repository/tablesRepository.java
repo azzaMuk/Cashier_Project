@@ -38,7 +38,7 @@ public class tablesRepository {
 
     //GetAll
 
-    public LiveData<List<restaurantTables>> getAllTable (restaurantTables t){
+    public LiveData<List<restaurantTables>> getAllTable (){
         return getAllTables;
     }
 

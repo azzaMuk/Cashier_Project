@@ -39,7 +39,7 @@ public class tableTypeRepository {
 
     //GetAll
 
-    public LiveData<List<tableType>> getAllType(tableType t){
+    public LiveData<List<tableType>> getAllType(){
         return getAllTypes;
     }
     //DeleteAll

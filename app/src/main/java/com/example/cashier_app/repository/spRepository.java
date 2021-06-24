@@ -39,7 +39,7 @@ public class spRepository {
 
     //GetAll
 
-    public LiveData<List<salesPerson>> getAllPersons(salesPerson s){
+    public LiveData<List<salesPerson>> getAllPersons(){
         return getAllPerson;
     }
 

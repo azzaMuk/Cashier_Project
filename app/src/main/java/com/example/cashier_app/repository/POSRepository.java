@@ -37,7 +37,7 @@ public class POSRepository {
 
     //GetAll
 
-    public LiveData<List<POS>> getAllPOS(POS p){
+    public LiveData<List<POS>> getAllPOS(){
         return getAllPOS;
     }
 

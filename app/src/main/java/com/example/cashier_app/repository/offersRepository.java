@@ -40,7 +40,7 @@ public class offersRepository {
 
     //GetAll
 
-    public LiveData<List<offers>> getAllOffer(offers o){
+    public LiveData<List<offers>> getAllOffer(){
         return getAllOffers;
     }
 

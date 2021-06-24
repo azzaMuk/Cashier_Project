@@ -39,7 +39,7 @@ public class COSRepository {
 
     //GetAll
 
-    public LiveData<List<centerOfSale>> getAllCOS(centerOfSale cos){
+    public LiveData<List<centerOfSale>> getAllCOS(){
         return getAllCOS;
     }
 

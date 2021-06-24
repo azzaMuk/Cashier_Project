@@ -38,7 +38,7 @@ public class statusRepository {
 
     //GetAll
 
-    public LiveData<List<status>> getAllStatus(status s){
+    public LiveData<List<status>> getAllStatus(){
         return getAllStatus;
     }
 

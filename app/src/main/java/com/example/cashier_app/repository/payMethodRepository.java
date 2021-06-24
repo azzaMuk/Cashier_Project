@@ -38,7 +38,7 @@ public class payMethodRepository {
 
     //GetAll
 
-    public LiveData<List<paymentMethodsDB>> getAllMethod(paymentMethodsDB method){
+    public LiveData<List<paymentMethodsDB>> getAllMethod(){
         return getAllMethods;
     }
 

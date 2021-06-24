@@ -38,7 +38,7 @@ public class comboItemsRepository {
 
     //GetAll
 
-    public LiveData<List<comboItems>> getAllCombo(comboItems combo){
+    public LiveData<List<comboItems>> getAllCombo(){
         return getAllCombo;
     }
 

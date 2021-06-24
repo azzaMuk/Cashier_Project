@@ -38,7 +38,7 @@ public class tillRepository {
 
     //GetAll
 
-    public LiveData<List<till>> getAllTills(till t){
+    public LiveData<List<till>> getAllTills(){
         return getAllTills;
     }
 

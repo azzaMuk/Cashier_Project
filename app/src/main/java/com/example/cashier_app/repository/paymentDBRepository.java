@@ -37,7 +37,7 @@ public class paymentDBRepository {
 
     //GetAll
 
-    public LiveData<List<paymentDB>> getAllPayment(paymentDB payment){
+    public LiveData<List<paymentDB>> getAllPayment(){
         return getAllPayment;
     }
 

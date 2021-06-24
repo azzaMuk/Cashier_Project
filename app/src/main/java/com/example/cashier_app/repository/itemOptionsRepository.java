@@ -42,7 +42,7 @@ public class itemOptionsRepository {
 
     //GetAll
 
-    public LiveData<List<itemOptions>> getAllOTP(itemOptions otp){
+    public LiveData<List<itemOptions>> getAllOTP(){
         return getAllOtp;
     }
 
