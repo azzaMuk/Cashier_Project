@@ -3,8 +3,6 @@ package com.example.cashier_app.DB_entities;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
 
-import com.example.cashier_app.repository.COSRepository;
-
 @Entity(primaryKeys = {"bill_ID","POSID","branchID"},
         foreignKeys = {@ForeignKey(entity = centerOfSale.class,parentColumns = "centerOfSaleID",childColumns = "centerOfSaleID"),
         @ForeignKey(entity = paymentMethodsDB.class,parentColumns = "serialPay",childColumns = "serialPay"),
