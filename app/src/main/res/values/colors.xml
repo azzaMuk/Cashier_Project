@@ -17,6 +17,9 @@
     <color name="textblue">#0D3A5E</color>
     <color name="redbtn"> #ED6E62</color>
     <color name="greenbtn"> #47b27c</color>
-
+    <color name="graybtn">#aab6bd</color>
+    <color name="background">#e5e6e7</color>
+    <color name="text">#0d3a5e</color>
+    <color name="nav">#F3F5F5</color>
 
 </resources>

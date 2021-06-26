@@ -8,17 +8,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cashier_App">
-        <activity android:name="com.example.cashier_app.UI.MainScreenActivity" android:screenOrientation="landscape">
+
+        <activity
+            android:name="com.example.cashier_app.UI.Item"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.cashier_app.UI.Tables"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.cashier_app.UI.Report"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.cashier_app.UI.Orders"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.cashier_app.UI.Login"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.cashier_app.UI.Options"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.example.cashier_app.UI.MainActivity"
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.cashier_app.UI.MainActivity" android:screenOrientation="landscape"/>
-        <activity android:name="com.example.cashier_app.UI.Orders" android:screenOrientation="landscape"/>
-        <activity android:name="com.example.cashier_app.UI.Report" android:screenOrientation="landscape"/>
-        <activity android:name="com.example.cashier_app.UI.Payment" android:screenOrientation="landscape"/>
-        <activity android:name="com.example.cashier_app.UI.Item" android:screenOrientation="landscape"/>
-        <activity android:name="com.example.cashier_app.UI.Options" android:screenOrientation="landscape"/>
     </application>
 </manifest>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="195dp"
+    android:layout_height="230dp"
+    android:layout_margin="15dp"
+    android:background="@color/white"
+    android:elevation="20dp">
+
+    <ImageView
+        android:id="@+id/ItemImg"
+        android:layout_width="174dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/burger2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="165dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="65dp"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:gravity="center"
+        android:hint="Beef Burger"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemDesc"
+        android:layout_width="165dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="6dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:backgroundTint="@color/appblue1"
+        android:hint="Beef Burger with onions and tomatos and spicy also with double"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
